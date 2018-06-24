@@ -1,0 +1,16 @@
+html{
+text-align: center;
+background-color: black;
+color: white;
+}
+.landing{
+  background-color: #2c2c2d;
+object-fit: scale-down;
+}
+nav{
+  background-color: #2c2c2d;
+  color: aquamarine;
+}
+nav a{
+  color: aquamarine;
+}
