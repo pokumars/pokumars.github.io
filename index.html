@@ -2,43 +2,201 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Portfolio Oheneba</title>
+
+    <link rel="stylesheet" href="resources\css\reset.css">
     <link rel="stylesheet" href="resources\css\style.css">
-    <title>Pokumars' Page</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <body>
-    <!-- Landing Spot-->
-    <p class="landing">
-      <img src="resources\Welcome.png" alt="Welcome image">
-    </p>
-    <h1>Greetings loved ones! Let's take a journey.</h1>
-
-      <!--Description -->
-      <h2>The Journey</h2>
-      <p>The journey begins for real in 2018. Here I am contemplating how to get a summer job <br>
-         that allows me to earn as well learn. I am at my wits end as nothing seems to be in the <br>
-       area that I can qualify for with my first year I.T student skills. So I decide to spend that summer <br>
-     Getting one specific employable skill under my belt. Along comes Codecademy with this  10-week course that costs like <br>
-  200 bucks. I am already a sucker for any opportunity to invest in myself or my future; match made in heaven. <br>
-  I did get lucky and land a job at my school's helpdesk department, which also doubles as work placement- <br>
-   another 2 birds with one stone. <strong>Ka-Ching!</strong> So, for this summer all I do pretty much after work is <br>
-   my beloved Codecademy course. 10 weeks of this stuff, but strangely ,I love it. The ups and downs and all.
-  </p>
-
-  <h3>Check out some websites I built during the course and outside it as well</h3>
-  <p>In the footer.</p>
-  <p>I hope to have the footer fixed so it is always at the bottom of the screen as you scroll ;) XD</p>
-
-
-
-  <!-- -->
-
-      <!--Footer -->
-    <footer>
-      <nav>
-        <a href="https://pokumars.github.io/excursion/">Excursion app</a>
-        <a href="https://pokumars.github.io/broadway/">Broadway designs</a>
-        <a href="https://pokumars.github.io/MyTimes/">MyTimes news</a>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Developer Page</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#email" onclick="makeVisible()">
+                Contact Me<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">CV</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              More Sites I built
+             </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="https://pokumars.github.io/excursion/">
+                  Excursion App - fictional</a>
+                <a class="dropdown-item" href="#">More to come</a>
+              </div>
+            </li>
+          </ul>
+        </div>
       </nav>
-    </footer>
+    </header>
+    <!--Jumbotron -->
+    <section class="jumbotron-container">
+      <div class="jumbotron">
+        <div class="container">
+          <h1>hi, I am Oheneba. <br> I make websites</h1>
+          <p>Web developer ready to make beautiful and responsive websites at your service</p><br>
+          <p><a class="btn btn-primary btn-lg" href="#email" onclick="makeVisible()"
+            role="button">Contact me</a></p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="row">
+        <div class="container">
+          <h2 class="text-center">Technical Skills</h2>
+          <div class="col-sm-4">
+            <!-- <span aria-hidden="true" class= "fa fa-html5 fa-5x"></span> -->
+            <h3 class="text-center">HTML</h3>
+          </div>
+          <div class="col-sm-4">
+            <h3 class="text-center">CSS3</h3>
+          </div>
+          <div class="col-sm-4">
+            <h3 class="text-center">Javascript</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Portfolio -->
+    <section class="myPortfolio" id="portfolio">
+      <h1 class="text-center white-txt">Portfolio</h1>
+      <div class="row">
+        <div class="container">
+          <!--Project 1 -->
+        <div class="col-sm-4">
+          <a href="https://pokumars.github.io/jumpstart/" target="_blank">
+            <div class="image-container">
+              <img class="img-responsive" src="resources\images\Jumpstart.jpg" alt="">
+            </div>
+          </a>
+          <a href="https://pokumars.github.io/jumpstart/" target="_blank"><h4 class="text-center">Jumpstart</h4></a>
+        </div>
+
+        <!--Project 2 -->
+        <div class="col-sm-4">
+            <a href="#" target="_blank">
+              <div class="image-container">
+                <img class="img-responsive" src="resources\images\tortoiseshelloptics.jpg" alt="">
+              </div>
+            </a>
+            <a href="#" target="_blank"><h4 class="text-center">
+              Tortoiseshell Optics</h4></a>
+        </div>
+
+
+        <!--Project 3 -->
+        <div class="col-sm-4">
+          <a href="https://pokumars.github.io/secret-agent-supply/" target="_blank">
+            <div class="image-container">
+              <img class="img-responsive" src="resources\images\secretagentsupply.jpg" alt="">
+            </div>
+          </a>
+          <a href="https://pokumars.github.io/secret-agent-supply/" target="_blank"><h4 class="text-center">Secret Agent Supply</h4></a>
+        </div>
+
+      </div>
+    </div>
+
+    <!--Row 2-->
+    <div class="row">
+      <div class="container">
+
+        <!--Project 4 -->
+      <div class="col-sm-4">
+        <a href="https://pokumars.github.io/MyTimes/" target="_blank">
+          <div class="image-container">
+            <img class="img-responsive" src="resources\images\mytimes.jpg" alt="">
+          </div>
+        </a>
+        <a href="https://pokumars.github.io/MyTimes/" target="_blank"><h4 class="text-center">
+          My Times</h4></a>
+      </div>
+      <!--Project 5 -->
+      <div class="col-sm-4">
+        <a href="https://pokumars.github.io/tea-cozy/" target="_blank">
+          <div class="image-container">
+            <img class="img-responsive" src="resources\images\teacozy.jpg" alt="">
+          </div>
+        </a>
+        <a href="https://pokumars.github.io/tea-cozy/" target="_blank"><h4 class="text-center">
+          Tea Cozy</h4></a>
+      </div>
+
+      <!--Project 6 -->
+      <div class="col-sm-4">
+        <a href="https://pokumars.github.io/colmar-academy/" target="_blank">
+          <div class="image-container">
+            <img class="img-responsive" src="resources\images\colmaracademy.jpg" alt="">
+          </div>
+        </a>
+        <a href="https://pokumars.github.io/colmar-academy/" target="_blank"><h4 class="text-center">Colmar Academy</h4></a>
+      </div>
+
+      </div>
+    </div>
+    </section>
+
+    <section>
+      <h2 class="text-center"><strong>Contact</strong></h2>
+
+      <div class="row">
+        <!--Github -->
+        <div class="col-sm-4">
+          <div class="contact text-center">
+            <a href="https://github.com/pokumars?tab=repositories" target="_blank">
+              <span aria-hidden="true" class= "fa fa-github fa-5x"></span>
+            </a>
+          </div>
+        </div>
+
+        <!-- contact -->
+        <div class="col-sm-4 contact-bg" id="email">
+          <div class="contact text-center white-txt">
+            <p>Send me an email @</p>
+            <h4>ohenebakob@hotmail.com</h4>
+            <p>Let's create something</p>
+          </div>
+        </div>
+
+        <!--Email -->
+        <div class="col-sm-4">
+          <div class="contact text-center">
+            <a href="#email" onclick="makeVisible()">
+              <span aria-hidden="true" class= "fa fa-envelope fa-5x"></span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <footer class="text-center page-footer footer-dark">Copyright &copy; 2018 Oheneba. Let's connect.</footer>
+
+    <script type="text/javascript" src="resources\js\main.js">
+
+    </script>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+       <!-- Include all compiled plugins (below), or include individual files as needed -->
+       <script src="js/bootstrap.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
   </body>
 </html>
